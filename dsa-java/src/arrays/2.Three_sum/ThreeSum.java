@@ -1,6 +1,6 @@
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ThreeSum {
 
@@ -40,13 +40,13 @@ public class ThreeSum {
   }
 
   // main
-  public static void name(String[] args) {
+  public static void main(String[] args) {
     ThreeSum solution = new ThreeSum();
     int[] nums = {-1, 0, 1, 2, -1, -4};
     List<List<Integer>> triplets = solution.threeSum(nums);
 
     System.out.println("Unique triplets that sum to 0:");
-    for (List<Intger> triplet : triplets) {
+    for (List<Integer> triplet : triplets) {
       System.out.println(triplet);
     }
   }
