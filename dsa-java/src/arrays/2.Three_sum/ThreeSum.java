@@ -38,4 +38,16 @@ public class ThreeSum {
     }
     return result;
   }
+
+  // main
+  public static void name(String[] args) {
+    ThreeSum solution = new ThreeSum();
+    int[] nums = {-1, 0, 1, 2, -1, -4};
+    List<List<Integer>> triplets = solution.threeSum(nums);
+
+    System.out.println("Unique triplets that sum to 0:");
+    for (List<Intger> triplet : triplets) {
+      System.out.println(triplet);
+    }
+  }
 }
