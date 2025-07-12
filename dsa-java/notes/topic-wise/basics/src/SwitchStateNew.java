@@ -11,7 +11,7 @@ public class SwitchStateNew {
       case "Apple" -> System.out.println("A red sweet fruit");
       case "Orange" -> System.out.println("Round fruit");
       case "Grapes" -> System.out.println("Small fruit");
-      default -> System.out.earintln("Please enter a valid fruit");
+      default -> System.out.println("Please enter a valid fruit");
     }
     sc.close();
   }
