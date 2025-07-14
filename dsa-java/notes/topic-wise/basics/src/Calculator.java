@@ -52,7 +52,7 @@ public class Calculator {
         System.out.println("Result: " + ans);
 
       } else {
-        System.out.println("Invalid operation!!");
+        System.out.println("Invalid operation, Please try again!!");
       }
     }
 
