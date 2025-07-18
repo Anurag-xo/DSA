@@ -15,3 +15,5 @@
 | 08 | 2025-07-08 | - [x] 3 Sum | still to learn |
 | 10 | 2025-07-10 | - [x] Basics of Loops
 - [x] if-else etc | now i need to do the fabonicci problem tommorow and also try to make a small project |
+| 18 | 2025-07-18 | - [x] Linear Search | solve more problem based on linear search in leetcode and hackerrank |
+| 18 | 2025-07-18 | - [x]  |  |
