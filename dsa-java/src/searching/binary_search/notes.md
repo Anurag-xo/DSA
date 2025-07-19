@@ -32,6 +32,7 @@ Binary search is an algorithm that allows you to rapidly find a target value in 
 
 ## 🔍 Example: Iterative Binary Search in Java
 
+```
 public class BinarySearch {
 public static int binarySearch(int[] arr, int target) {
 int start = 0;
@@ -64,6 +65,7 @@ int end = arr.length - 1;
     }
 
 }
+```
 
 ---
 
