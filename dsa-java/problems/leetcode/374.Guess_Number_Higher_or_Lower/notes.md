@@ -35,6 +35,7 @@ This feedback loop is essential to efficiently narrowing down the search using b
 
 ## Code Illustration
 
+```java
 int mid = left + (right - left) / 2;
 int res = guess(mid);
 if (res == 0) {
@@ -45,7 +46,7 @@ right = mid - 1; // Guess is too high
 left = mid + 1; // Guess is too low
 }
 
-text
+```
 
 ---
 
