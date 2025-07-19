@@ -41,14 +41,14 @@ You could try all integers from `1` up to `x`, checking if their square is less 
 
 ## 📝 Solution Code (Java)
 
+```java
 public class SqrtSolution {
 public static int mySqrt(int x) {
-if (x < 2) return x; // 0 and 1 are trivial
+        if (x < 2) return x; // 0 and 1 are trivial
 
-text
-int left = 1, right = x / 2, ans = 0;
-while (left <= right) {
-int mid = left + (right - left) / 2;
+        int left = 1, right = x / 2, ans = 0;
+        while (left <= right) {
+        int mid = left + (right - left) / 2;
 
         long square = (long) mid * mid; // Prevent overflow
 
@@ -70,8 +70,7 @@ int x = 8;
 System.out.println("Sqrt(" + x + ") = " + mySqrt(x)); // Output: 2
 }
 }
-
-text
+```
 
 ---
 
