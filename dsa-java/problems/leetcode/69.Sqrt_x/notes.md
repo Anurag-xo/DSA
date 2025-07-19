@@ -33,17 +33,64 @@ You could try all integers from `1` up to `x`, checking if their square is less 
 1. **Range:** Square root of `x` is always between `1` and `x / 2` (for x > 1).
 2. **Binary Search:** Check the middle value:
    - If `mid*mid == x` → mid is the root.
-   - If `mid*mid  x` → root is lower, move left.
+   - If `mid*mid < x` → root is higher, move right.
+   - If `mid*mid > x` → root is lower, move left.
 3. Track the **last mid value whose square is less than or equal to `x`** (for rounding down).
 
 ---
 
 ## 📝 Solution Code (Java)
 
-```java
 public class SqrtSolution {
-    public static int mySqrt(int x) {
-        if (x  8` → `right=2`
+public static int mySqrt(int x) {
+if (x < 2) return x; // 0 and 1 are trivial
+
+text
+int left = 1, right = x / 2, ans = 0;
+while (left <= right) {
+int mid = left + (right - left) / 2;
+
+        long square = (long) mid * mid; // Prevent overflow
+
+        if (square == x) {
+            return mid;
+        } else if (square < x) {
+            ans = mid;      // mid is a possible answer
+            left = mid + 1; // move right
+        } else {
+            right = mid - 1; // move left
+        }
+    }
+    return ans; // Biggest integer whose square <= x
+
+}
+
+public static void main(String[] args) {
+int x = 8;
+System.out.println("Sqrt(" + x + ") = " + mySqrt(x)); // Output: 2
+}
+}
+
+text
+
+---
+
+## 🚩 Key Notes
+
+- Always cast to `long` when doing `mid*mid` to avoid integer overflow.
+- The loop maintains the invariant: `ans` is the greatest integer such that `ans*ans <= x`.
+- Handles edge cases: `x = 0` and `x = 1`.
+- Runs in **O(log x)** time.
+
+---
+
+## 🧩 Example Trace
+
+Let’s walk through `x = 8`:
+
+1. `left=1`, `right=4`, `ans=0`
+2. `mid=2`, `2*2 = 4 < 8` → `ans=2`, `left=3`
+3. `mid=3`, `3*3 = 9 > 8` → `right=2`
 4. Loop ends (`left=3 > right=2`)
 5. Return `ans=2`
 
@@ -57,4 +104,3 @@ public class SqrtSolution {
 - No built-in exponent functions used!
 
 ---
-```
