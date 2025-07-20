@@ -5,7 +5,7 @@ public class Solution {
     int res = 0;
     while (left <= right) {
       int mid = left + (right - left) / 2;
-      int coinsUsed = (long) mid * (mid + 1) / 2; // K*(K+1)/2
+      long coinsUsed = (long) mid * (mid + 1) / 2; // K*(K+1)/2
       if (coinsUsed == n) {
         return mid;
       }
