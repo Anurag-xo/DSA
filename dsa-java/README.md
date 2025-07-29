@@ -10,6 +10,4 @@ This repository contains my Data Structures and Algorithms implementations in Ja
 
 ## How to Use
 
-will update on how to use
-
 ### With Gradle
