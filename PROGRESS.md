@@ -17,3 +17,4 @@
 - [x] if-else etc | now i need to do the fabonicci problem tommorow and also try to make a small project |
 | 18 | 2025-07-18 | - [x] Linear Search | solve more problem based on linear search in leetcode and hackerrank |
 | 18 | 2025-07-18 | - [x]  |  |
+| 29 | 2025-07-29 | - [x] A bit of a break right now but i will be back soon. | next month |
