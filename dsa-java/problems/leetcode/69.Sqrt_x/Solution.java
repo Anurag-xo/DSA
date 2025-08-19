@@ -1,5 +1,6 @@
 public class Solution {
   // https://leetcode.com/problems/sqrtx/description/
+  // right now i have to do this in other languages also
   public static void main(String[] args) {
     int x = 8;
     System.out.println("Square root: " + mySqrt(x));
