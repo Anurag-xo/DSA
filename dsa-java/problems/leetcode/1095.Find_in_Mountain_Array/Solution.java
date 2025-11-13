@@ -1,8 +1,8 @@
 public class SearchInMountain {
-// TODO: I NEED TO FIX THIS CODE THERRE ARE SOME EDGE CASES TO BE ACCESSED
-  public static void main(String[] args) {
-
-  }
+  // TODO: I NEED TO FIX THIS CODE THERRE ARE SOME EDGE CASES TO BE ACCESSED
+  //  WARN:
+  //  BUG:
+  public static void main(String[] args) {}
 
   int search(int[] arr, int target) {
     int peak = peakIndexInMountainArray(arr);
@@ -10,7 +10,7 @@ public class SearchInMountain {
     if (firstTry != -1) {
       return firstTry;
     }
-    //try to search in second half
+    // try to search in second half
     return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
   }
 
@@ -27,11 +27,11 @@ public class SearchInMountain {
     }
     return start;
   }
-  
+
   static int orderAgnosticBS(int[] arr, int target, int start, int end) {
     boolean isAsc = arr[start] < arr[end];
 
-    while(start <= end) {
+    while (start <= end) {
       int mid = start + (end - start) / 2;
 
       if (arr[mid] == target) {
