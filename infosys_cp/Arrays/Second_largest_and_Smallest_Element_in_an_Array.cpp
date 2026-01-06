@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// to find the secondlargest
 int secondLargest(vector<int> &arr, int n) {
   int largest = arr[0];
   int slargest = -1;
@@ -33,7 +33,7 @@ int secondSmallest(vector<int> &arr, int n) {
   return ssmallest;
 }
 
-// main
+// main function 
 vector<int> getSecondOrderElements(int n, vector<int> a) {
   int slargest = secondLargest(arr, n);
   int ssmallest = secondSmallest(arr, n);
