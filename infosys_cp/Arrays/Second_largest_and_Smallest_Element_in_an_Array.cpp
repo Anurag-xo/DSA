@@ -16,7 +16,7 @@ int secondLargest(vector<int> &arr, int n) {
   }
   return slargest;
 }
-
+// to find the second smallest
 int secondSmallest(vector<int> &arr, int n) {
   int smallest =  a[0];
   int ssmallest = INT_MAX;
